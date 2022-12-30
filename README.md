@@ -10,4 +10,6 @@ OBJECTIVE B : design improve
 
 OBJECTIVE C :  SCSS mixin defining design variations for each bootstrap contextual class ( primary, secondary, success, danger, warning, info, light, dark).
 
-See _cutom.scss and mixins.scss files for the mixines and their use.
+* _cutom.scss: https://github.com/AudreyMas/exercise-bootstrap/blob/main/scss/_custom.scss
+
+* mixins.scss: https://github.com/AudreyMas/exercise-bootstrap/blob/main/scss/_mixins.scss
