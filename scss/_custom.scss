@@ -1,6 +1,5 @@
+@import "_mixins.scss";
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
-
-$box-shadow: 0 0.5rem 1rem rgba($black, 0.15);
 
 body {
   h1,
@@ -9,7 +8,7 @@ body {
   h4,
   h5,
   h6 {
-    color: $dark;
+    @include big-title;
   }
   #exercise.card {
     overflow-x: hidden;
@@ -39,11 +38,9 @@ body {
               height: 50px;
             }
             div {
-              background-color: white;
-              &:hover,
-              &:active {
-                background-color: $primary;
-                color: white !important;
+              @include primary-btn;
+              &.btn-secondary {
+                @include secondary-btn;
               }
             }
           }
@@ -75,13 +72,17 @@ body {
               left: 0;
             }
           }
-          .list-btn li div {
-            height: 50px;
-            width: 50px;
-            border-radius: 10%;
-            box-shadow: $box-shadow;
-            &:hover {
-              box-shadow: none;
+          .list-btn li {
+            .list-group-item-success,
+            .list-group-item-warning,
+            .list-group-item-info {
+              @include contextual-btn;
+              &:hover {
+                box-shadow: none;
+              }
+            }
+            .list-group-item-danger {
+              @include contextual-btn-danger;
             }
           }
         }
@@ -89,11 +90,7 @@ body {
     }
     footer {
       .line {
-        width: 30vw;
-        margin-left: auto;
-        margin-right: auto;
-        height: 1px;
-        margin-bottom: 4px;
+        @include line-light;
       }
     }
   }

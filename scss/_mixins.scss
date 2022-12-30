@@ -1,0 +1,64 @@
+// variables
+$light: rgb(204, 215, 224);
+
+
+//---MIXINS
+
+//for list-group-item- : success, warning, info
+@mixin contextual-btn {
+  height: 50px;
+  width: 50px;
+  border-radius: 10%;
+  box-shadow: $box-shadow;
+}
+
+// for danger
+@mixin contextual-btn-danger {
+  height: 50px;
+  width: 50px;
+  border-radius: 10%;
+  cursor: not-allowed;
+}
+
+//for primary nav buttons
+@mixin primary-btn {
+  text-align: center;
+  background-color: $gray-100;
+  &:hover,
+  &:active {
+    background-color: $primary;
+    color: white !important;
+  }
+}
+
+//for secondary nav buttons
+@mixin secondary-btn {
+  background-color: $gray-100;
+  cursor: not-allowed;
+  &:hover,
+  &:active {
+    color: $danger !important;
+  }
+}
+
+//for light
+@mixin bg-light {
+  --bs-bg-opacity: 1;
+  background-color: $light;
+}
+@mixin line-light {
+  width: 30vw;
+  margin-left: auto;
+  margin-right: auto;
+  height: 1px;
+  margin-bottom: 4px;
+  @include bg-light;
+}
+
+//for dark
+@mixin big-title {
+  color: $dark;
+  font-weight: 700;
+}
+
+
