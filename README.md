@@ -4,4 +4,5 @@ OBJECTIVE A : replicate the component using Bootstrap v5.2.3
 
 
 OBJECTIVE B design improve
+
 ![](https://github.com/AudreyMas/exercise-bootstrap/blob/2ce26e51ca033dd7f620bf914337fbada52ddd2c/objective-B.gif)
