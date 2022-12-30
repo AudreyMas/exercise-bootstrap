@@ -1,1 +1,98 @@
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+body {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $dark;
+  }
+  #exercise.card {
+    overflow-x: hidden;
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4rem;
+    .card-content {
+      width: 600px;
+      min-height: 638px;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      header {
+        margin-top: -3em;
+        ul {
+          @media (max-width: 768px) {
+            flex-direction: column;
+            align-items: center;
+          }
+          li {
+            @media (max-width: 768px) {
+              width: 100px;
+              height: 50px;
+            }
+            div {
+              background-color: rgba(255, 255, 255, 0.283);
+              &:hover,
+              &:active {
+                background-color: $primary;
+                color: white !important;
+              }
+            }
+          }
+        }
+      }
+      .tab-content {
+        .card-text {
+          @media (max-width: 768px) {
+            margin-top: 1rem;
+            width: 70vw;
+            text-align: center;
+          }
+        }
+        .tab-1-content {
+          .tab-content {
+            .tab-pane {
+              text-align: center;
+              img {
+                border-radius: 100% !important;
+              }
+            }
+            .bg-color {
+              position: absolute;
+              top: 0;
+              height: 100%;
+              width: 100vw;
+              z-index: -1;
+              opacity: 0.4;
+              left: 0;
+            }
+          }
+          .list-btn li div {
+            height: 50px;
+            width: 50px;
+            border-radius: 10%;
+            box-shadow: $box-shadow;
+            &:hover {
+              box-shadow: none;
+            }
+          }
+        }
+      }
+    }
+    footer {
+      .line {
+        width: 30vw;
+        margin-left: auto;
+        margin-right: auto;
+        height: 1px;
+        margin-bottom: 4px;
+      }
+    }
+  } 
+}

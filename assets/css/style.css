@@ -10769,5 +10769,95 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+body h1, body .h1,
+body h2,
+body .h2,
+body h3,
+body .h3,
+body h4,
+body .h4,
+body h5,
+body .h5,
+body h6,
+body .h6 {
+  color: #212529;
+}
+body #exercise.card {
+  overflow-x: hidden;
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4rem;
+}
+body #exercise.card .card-content {
+  width: 600px;
+  min-height: 638px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body #exercise.card .card-content header {
+  margin-top: -3em;
+}
+@media (max-width: 768px) {
+  body #exercise.card .card-content header ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 768px) {
+  body #exercise.card .card-content header ul li {
+    width: 100px;
+    height: 50px;
+  }
+}
+body #exercise.card .card-content header ul li div {
+  background-color: rgba(255, 255, 255, 0.283);
+}
+body #exercise.card .card-content header ul li div:hover, body #exercise.card .card-content header ul li div:active {
+  background-color: #0d6efd;
+  color: white !important;
+}
+@media (max-width: 768px) {
+  body #exercise.card .card-content .tab-content .card-text {
+    margin-top: 1rem;
+    width: 70vw;
+    text-align: center;
+  }
+}
+body #exercise.card .card-content .tab-content .tab-1-content .tab-content .tab-pane {
+  text-align: center;
+}
+body #exercise.card .card-content .tab-content .tab-1-content .tab-content .tab-pane img {
+  border-radius: 100% !important;
+}
+body #exercise.card .card-content .tab-content .tab-1-content .tab-content .bg-color {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100vw;
+  z-index: -1;
+  opacity: 0.4;
+  left: 0;
+}
+body #exercise.card .card-content .tab-content .tab-1-content .list-btn li div {
+  height: 50px;
+  width: 50px;
+  border-radius: 10%;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+body #exercise.card .card-content .tab-content .tab-1-content .list-btn li div:hover {
+  box-shadow: none;
+}
+body #exercise.card footer .line {
+  width: 30vw;
+  margin-left: auto;
+  margin-right: auto;
+  height: 1px;
+  margin-bottom: 4px;
+}
 
 /*# sourceMappingURL=style.css.map */
