@@ -1,5 +1,7 @@
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
+$box-shadow: 0 0.5rem 1rem rgba($black, 0.15);
+
 body {
   h1,
   h2,
@@ -37,7 +39,7 @@ body {
               height: 50px;
             }
             div {
-              background-color: rgba(255, 255, 255, 0.283);
+              background-color: white;
               &:hover,
               &:active {
                 background-color: $primary;
@@ -94,5 +96,5 @@ body {
         margin-bottom: 4px;
       }
     }
-  } 
+  }
 }
