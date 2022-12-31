@@ -15,13 +15,17 @@ OBJECTIVE C :  SCSS mixin defining design variations for each bootstrap contextu
 * mixins.scss: https://github.com/AudreyMas/exercise-bootstrap/blob/main/scss/_mixins.scss
 
 
-OBJECTIVE D: Rapport usability issues
+OBJECTIVE D: short rapport of usability issues
 
-According to the goal(s) use(s) of this card, we can test the usability by : 
+According to the goal(s) use(s) of this card, we can test/improve the usability by : 
 
-- checking if the 10 Usability principles Heuristics of Nielsen are respected.
-I could improve for example:
-*more consistency and standards in the design
+- Checking if the 10 Usability principles Heuristics of Nielsen are respected.
+Here, I could improve for exemple :
+* the consistency and standards in the design to the different tab
+* status of the loading tab by indicate if something will be display or not
 
+- Setting up some methods like Heat maps or Eye Tracking,... could be use to see if the main actions are correctly done by user.
 
-- setting up some methods like Heat maps or Eye Tracking,... could be use to see if the main actions are correctly done by user.
+- Testing the platform on different browser
+
+- Improving the responsive 
