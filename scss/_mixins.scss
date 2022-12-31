@@ -1,5 +1,7 @@
 // variables
 $light: rgb(204, 215, 224);
+$primary: #C6A49A;
+$dark: #535556;
 
 
 //---MIXINS
@@ -10,6 +12,7 @@ $light: rgb(204, 215, 224);
   width: 50px;
   border-radius: 10%;
   box-shadow: $box-shadow;
+  border: 1px solid $dark;
 }
 
 // for danger
@@ -23,17 +26,20 @@ $light: rgb(204, 215, 224);
 //for primary nav buttons
 @mixin primary-btn {
   text-align: center;
-  background-color: $gray-100;
+  color: white;
+  background-color: $primary;
+  border: 1px solid $dark;
   &:hover,
   &:active {
-    background-color: $primary;
-    color: white !important;
+    color: $primary!important;
+    background-color: white !important;
   }
 }
 
 //for secondary nav buttons
 @mixin secondary-btn {
-  background-color: $gray-100;
+  background-color: white;
+  color: $primary;
   cursor: not-allowed;
   &:hover,
   &:active {

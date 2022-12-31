@@ -47,13 +47,6 @@ body {
         }
       }
       .tab-content {
-        .card-text {
-          @media (max-width: 768px) {
-            margin-top: 1rem;
-            width: 70vw;
-            text-align: center;
-          }
-        }
         .tab-1-content {
           .tab-content {
             .tab-pane {
@@ -68,7 +61,7 @@ body {
               height: 100%;
               width: 100vw;
               z-index: -1;
-              opacity: 0.4;
+              opacity: 0.7;
               left: 0;
             }
           }
@@ -85,6 +78,31 @@ body {
               @include contextual-btn-danger;
             }
           }
+        }
+        .tab-3-content{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          align-items: center;
+          @media (max-width: 768px) {
+            display: flex;
+            flex-direction: column!important;
+          }
+          img{
+            @media (min-width: 768px) {
+              width: 50%;
+              margin-left: -5em;
+            }
+          }
+          .card-text {
+            width: 55%;
+            @media (max-width: 768px) {
+              margin-top: 1rem;
+              width: 70vw;
+              text-align: center;
+            }
+          }
+
         }
       }
     }
