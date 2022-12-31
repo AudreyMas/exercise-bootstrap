@@ -28,4 +28,4 @@ Here, I could improve for exemple :
 
 - Testing the platform on different browser
 
-- Improving the responsive 
+- Improving the responsive nav

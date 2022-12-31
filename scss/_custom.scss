@@ -79,16 +79,19 @@ body {
             }
           }
         }
-        .tab-3-content{
+        .tab-3-content {
           display: flex;
           flex-direction: row;
           justify-content: space-around;
           align-items: center;
           @media (max-width: 768px) {
             display: flex;
-            flex-direction: column!important;
+            flex-direction: column !important;
           }
-          img{
+          img {
+            @media (max-width: 768px) {
+              margin-left: 0em;
+            }
             @media (min-width: 768px) {
               width: 50%;
               margin-left: -5em;
@@ -102,7 +105,6 @@ body {
               text-align: center;
             }
           }
-
         }
       }
     }

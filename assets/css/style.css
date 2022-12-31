@@ -10880,6 +10880,11 @@ body #exercise.card .card-content .tab-content .tab-3-content {
     flex-direction: column !important;
   }
 }
+@media (max-width: 768px) {
+  body #exercise.card .card-content .tab-content .tab-3-content img {
+    margin-left: 0em;
+  }
+}
 @media (min-width: 768px) {
   body #exercise.card .card-content .tab-content .tab-3-content img {
     width: 50%;
